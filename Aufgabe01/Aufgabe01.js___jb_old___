@@ -7,9 +7,9 @@ if (err) throw err;
 obj = JSON.parse(data);
 
 for (x in obj.cities){
-  console.log("name: " + chalk.green(obj.cities[x].name));
-  console.log("country: " + chalk.yellow(obj.cities[x].country));
-  console.log("population: " + chalk.blue(obj.cities[x].population));
+  console.log(chalk.green('name:') + "name: " + obj.cities[x].name);
+  console.log("country: " + obj.cities[x].country);
+  console.log("population: " + obj.cities[x].population);
   console.log("--------------------");
 
 };
