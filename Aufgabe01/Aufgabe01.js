@@ -1,11 +1,8 @@
 var fs = require('fs');
 var obj=[];
-fs.readFile('staedte.json', function(err, data){
+fs.readFile('staedte.json','utf8', function(err, data){
 if (err) throw err;
 obj = JSON.parse(data);
-});
-
-
 
 for (x in obj.cities){
   console.log("name: " + obj.cities[x].name);
@@ -15,9 +12,12 @@ for (x in obj.cities){
 
 };
 
-
-
-fs.readFile('text.txt', function(err, data){
-
-  console.log(data);
 });
+
+
+
+
+
+
+
+
